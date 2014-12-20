@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<NCReport version="2.12.0" type="report" name="Untitled">
+    <options>
+        <encoding>UTF-8</encoding>
+        <language>00</language>
+        <langrole>0</langrole>
+        <orientation>portrait</orientation>
+        <pagesize width="210.000" height="297.000">A4</pagesize>
+        <topmargin>15</topmargin>
+        <bottommargin>15</bottommargin>
+        <leftmargin>20</leftmargin>
+        <rightmargin>20</rightmargin>
+        <fontname>Arial</fontname>
+        <fontsize>10</fontsize>
+        <backcolor>#ffffff</backcolor>
+        <columns>0</columns>
+        <columnspace>0</columnspace>
+        <zoneSpacing>0</zoneSpacing>
+        <zoneBreak>false</zoneBreak>
+        <htmlBodyStyle>{DEFAULT}</htmlBodyStyle>
+    </options>
+    <datasources>
+        <datasource port="" password="123456" connection="external" driver="QMYSQL" connID="" openRole="begin" host="gentoo" type="sql" database="db_ktx" user="xdien" id="DataSource2" source="static" parentID="">select distinct SINH_VIEN.ho_ten,SINH_VIEN.mssv,HOP_DONG.ma_phong,HOP_DONG.tg_toi_da from PHONG
+left join HOP_DONG on PHONG.ma_phong = HOP_DONG.ma_phong
+left join SINH_VIEN on SINH_VIEN.mssv = HOP_DONG.mssv</datasource>
+    </datasources>
+    <variables/>
+    <pageheader height="51.858" id="PH">
+        <text width="168.275" posX="1.587" posY="0.000" height="11.112" fontSize="10" zValue="0" id="0LAXV" forecolor="#000000" useFont="true" fontName="Arial">&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+&lt;html>&lt;head>&lt;meta name="qrichtext" content="1" />&lt;style type="text/css">
+p, li { white-space: pre-wrap; }
+&lt;/style>&lt;/head>&lt;body style=" font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;">
+&lt;p align="center" style=" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;">&lt;span style=" font-family:'Serif'; font-size:14pt;">Danh sách sinh viên theo phòng&lt;/span>&lt;/p>&lt;/body>&lt;/html></text>
+        <label width="31.750" backcolor="#a0a0a4" posX="0.000" bgMode="fb" posY="46.037" height="4.762" fontSize="10" alignment="1" zValue="1" id="1GSVP" fontName="Arial">Phòng</label>
+        <label width="31.750" backcolor="#c0c0c0" posX="47.625" bgMode="fb" posY="46.037" height="4.762" fontSize="10" alignment="1" zValue="2" id="KZCJJ" fontName="Arial">Tên sinh viên</label>
+        <label width="31.750" backcolor="#c0c0c0" posX="84.137" bgMode="fb" posY="46.037" height="4.762" fontSize="10" alignment="1" zValue="3" id="BTXM8" fontName="Arial">Mã số sinh viên</label>
+        <label width="35.983" backcolor="#c0c0c0" posX="125.412" bgMode="fb" posY="46.037" height="4.762" fontSize="10" alignment="1" zValue="4" id="IVUEJ" fontName="Arial">Thời gian hết hợp đồng</label>
+    </pageheader>
+    <pagefooter height="40.481" id="PF"/>
+    <details>
+        <detail datasource="DataSource2" height="5.821" id="Detail1">
+            <items>
+                <field width="31.750" typeId="131074" posX="85.725" description="mssv" posY="0.000" height="4.762" fontSize="10" alignment="1" zValue="0" type="txt" ftype="ds" id="46JJZ" fontName="Arial" resource="datasource">DataSource2.mssv</field>
+                <field width="31.750" posX="47.625" posY="0.000" height="4.762" fontSize="10" alignment="1" zValue="1" type="txt" ftype="ds" id="96G74" fontName="Arial" resource="datasource">DataSource2.ho_ten</field>
+                <field width="31.750" posX="0.000" posY="0.000" height="4.762" fontSize="10" alignment="1" zValue="2" type="txt" ftype="ds" id="SYJ36" fontName="Arial" resource="datasource">DataSource2.ma_phong</field>
+                <field width="31.750" posX="125.412" posY="0.000" height="4.762" fontSize="10" alignment="1" zValue="3" type="txt" ftype="ds" id="TBZNG" fontName="Arial" resource="datasource">DataSource2.tg_toi_da</field>
+            </items>
+        </detail>
+    </details>
+</NCReport>

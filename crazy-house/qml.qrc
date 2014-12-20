@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>jhhj.qml</file>
+        <file>../../Pictures/comparison-of-youtube-media-types.png</file>
+    </qresource>
+</RCC>

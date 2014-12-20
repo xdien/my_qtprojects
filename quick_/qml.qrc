@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>SwipeArea.qml</file>
+        <file>../Google Chrome Icons/binary_field_icon.jpg</file>
+        <file>test.qml</file>
+    </qresource>
+</RCC>
